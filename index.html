@@ -108,7 +108,7 @@ header .btn{padding:10px 18px;font:400 20px/1 Tang,serif}
 .ok{font-weight:600;font-size:15px}
 /* local */
 .loc address{font:400 20px/1.55 YSB,Georgia,serif;font-style:normal;margin:26px 0 0}
-.map{max-width:880px;margin:34px auto 0;border:1px solid var(--c);aspect-ratio:16/8;background:var(--c)}
+.map{max-width:880px;margin:34px auto 0;border:1px solid var(--c);aspect-ratio:16/8;background:var(--c);overflow:hidden;border-radius:18px}
 .map iframe{width:100%;height:100%;border:0;display:block}
 /* avaliação */
 .stars{display:flex;gap:10px;justify-content:center;margin:34px 0 6px}
@@ -358,7 +358,15 @@ header{border-bottom:1px solid var(--k)}
 <div class="w">
 <h2 class="sp">Venha nos <span class="ck">visitar</span>:</h2>
 <address class="rv">R. do Bosque, 172 Jardim Bela Vista,<br>Santo André - SP / CEP 09040-280</address>
-<a class="map rv" href="https://www.google.com/maps/place/?q=place_id:ChIJN1t_rVpZzpQRv2_Z6556_U4" aria-label="Abrir a Vila Bacurau no Google Maps"><svg viewBox="0 0 880 440" role="img" aria-label="Mapa ilustrativo: Vila Bacurau na R. do Bosque, 172"><rect width="880" height="440" fill="#FAF8E8"/><g fill="#AF4515" fill-opacity=".1" stroke="#AF4515" stroke-width=".8"><rect x="0" y="0" width="200" height="128"/><rect x="0" y="152" width="200" height="138"/><rect x="0" y="312" width="200" height="128"/><rect x="220" y="0" width="200" height="128"/><rect x="220" y="152" width="200" height="138"/><rect x="220" y="312" width="200" height="128"/><rect x="440" y="0" width="200" height="128"/><rect x="440" y="152" width="200" height="138"/><rect x="440" y="312" width="200" height="128"/><rect x="660" y="0" width="220" height="128"/><rect x="660" y="152" width="220" height="138"/><rect x="660" y="312" width="220" height="128"/></g><path d="M440 152h200v138H440z" fill="#FAF8E8"/><path d="M455 222C455 180 520 166 560 180C610 168 632 214 620 252C606 284 540 288 490 276C462 268 455 246 455 222Z" fill="#E48F07" fill-opacity=".55"/><use href="#lf" x="478" y="190" width="44" height="44" fill="#AF4515" fill-opacity=".7"/><use href="#lf" x="560" y="215" width="38" height="38" fill="#AF4515" fill-opacity=".5"/><path d="M0 440C180 380 360 300 560 220S780 60 880 20" fill="none" stroke="#FAF8E8" stroke-width="22"/><path d="M0 440C180 380 360 300 560 220S780 60 880 20" fill="none" stroke="#E48F07" stroke-width="3"/><path d="M0 140H880" stroke="#E48F07" stroke-width="4"/><text x="40" y="136" font-size="11" letter-spacing="3" fill="#AF4515" font-family="ZS,sans-serif">R. DO BOSQUE</text><text x="448" y="300" font-size="22" fill="#AF4515" font-family="Cookie,cursive">bosque</text><g transform="translate(520 140)"><path d="M0 0C-16-26-26-38-26-52a26 26 0 1 1 52 0C26-38 16-26 0 0Z" fill="#AF4515"/><circle cy="-52" r="9" fill="#FAF8E8"/></g><rect x="560" y="52" width="270" height="74" fill="#AF4515"/><text x="580" y="86" font-size="28" fill="#FAF8E8" font-family="Tang,serif">Vila Bacurau</text><text x="580" y="110" font-size="13" fill="#FAF8E8" font-family="ZS,sans-serif">R. do Bosque, 172</text><rect x="24" y="388" width="250" height="32" fill="#FAF8E8" stroke="#AF4515" stroke-width=".8"/><text x="38" y="409" font-size="12" fill="#AF4515" font-family="ZS,sans-serif">Abrir no Google Maps</text></svg></a>
+<div class="map rv" aria-label="Mapa da localização da Vila Bacurau">
+  <iframe
+    src="https://maps.google.com/maps?q=R.%20do%20Bosque%2C%20172%2C%20Jardim%20Bela%20Vista%2C%20Santo%20Andr%C3%A9%20-%20SP%2C%2009040-280&z=16&output=embed"
+    loading="lazy"
+    allowfullscreen
+    referrerpolicy="no-referrer-when-downgrade"
+    title="Localização da Vila Bacurau no Google Maps"
+  ></iframe>
+</div>
 <div class="row rv"><a class="btn" href="https://wa.me/message/HWMMOMEPPKLYL1"><span class="wd"><svg class="i"><use href="#wa"/></svg></span><span>Tem alguma dúvida? Clica aqui, óh!<small>(11) 99100-3352</small></span></a><a class="btn o" href="https://www.google.com/maps/place/?q=place_id:ChIJN1t_rVpZzpQRv2_Z6556_U4"><svg class="i"><use href="#pin"/></svg>Como chegar</a></div>
 </div>
 </section>
